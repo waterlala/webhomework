@@ -1,20 +1,4 @@
-body
-{
-    max-width: 100%;
-    max-height: 100%;
-    margin:0px auto;
-    padding:0px;
-    display: flex;
-    justify-content: space-between;
-}
-.left{
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    background-color: rgb(30, 38, 44);
-    width: 15%;
-    height: 100%;
-}
+
 .left img{
     margin-left: 75px;
     margin-top: 25px;
@@ -87,9 +71,12 @@ body
     background: rgb(195, 198,206);
 }
 .left_bottom_buttom{
+    
     margin-top:470px;
+    width: 18%;
 }
 .left_bottom_buttom div li{
+    margin-left: 3%;
     height: 50px;
     list-style-type:none;
     outline:none;
@@ -97,8 +84,8 @@ body
     text-align: center;
 }
 .left_bottom_buttom div li input{
+    
     text-align: center;
-    width: 90%;
     height: 100%;
     color:rgb(239, 249,252);
     font-size: 16px;
@@ -108,22 +95,21 @@ body
     font-weight: bold;
     border-radius:7px;
 }
+.left_bottom_buttom_top li{
+    width: 90%;
+}
 .left_bottom_buttom_top li input{
+   width: 100%;
     background: rgb(245,108,45);
 }
 .left_bottom_buttom_buttom li{
-    margin-left: 14px;
-    margin-right: 14px;
+    width: 89%;
     border:1px rgb(195, 198,206) solid;
     border-radius:7px;
 }
 .left_bottom_buttom_buttom li input{
+    width: 100%;
     background: rgb(30, 38, 44);
-}
-.right{
-    background-color:rgb(50,255,255);
-    margin-left: 15%;
-    width: 85%;
 }
 .right_top_text div p{
     position: absolute;
@@ -136,8 +122,6 @@ body
     margin-left: 35px;
 }
 .right_top_text_text p{
-   
-    
     margin-left: 35px;
     margin-top: 150px;
     font-size: 16px;
@@ -171,7 +155,6 @@ body
     border: 0px;
     font-family:Microsoft JhengHei;
     font-weight: bold;
-    
 }
 .right_top_text_buttom_top li input{
     background: rgb(245,108,45);
@@ -251,7 +234,261 @@ body
     margin: auto;
 }
 .right_buttom div img{
-    width: 350px;
+    width: 470px;
     margin-top: 30px;
     margin-left: 30px;
+}
+
+@media only screen and (max-width: 1280px) {
+    html{
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .left img{
+        margin-left: 50px;
+    }
+    .left{
+        float:left;
+        text-align:center;
+        left: 0px;
+        top: 0px;
+        background-color: rgb(30, 38, 44);
+        width: 18%;
+        height: 100%;
+        position: fixed;
+    }
+    .left_input input{
+        margin-right: 10px;
+        width: 200px;
+    }
+    .left_bottom_buttom{
+        margin: 0px 0px 0px 0.3%;
+        position: fixed; 
+        bottom: 15px;
+    }
+    .right{
+        text-align:center;
+        float:left;
+        background-color:rgb(50,255,255);
+        width: 82%;
+        margin-left: 18%
+    }
+    .right_top_photo{
+        overflow:hidden;
+        width: 82%;
+        height: 672px;
+        margin-right: 13%;
+    }
+    .right_top_photo img{
+        width: 200%;
+        margin-left: -70%;
+        z-index: 0;
+    }
+    .right_middle_buttom li{
+        margin-left: 30px;
+    }
+    
+    .right_middle_buttom li input{
+        margin-left: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    html{
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    body{
+        width: 100%;
+        height: 1500px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .left img{
+        margin-left: 5px;
+    }
+    .left{
+        float:left;
+        text-align:center;
+        left: 0px;
+        top: 0px;
+        background-color: rgb(30, 38, 44);
+        width: 18%;
+        height: 100%;
+        position: fixed;
+    }
+    .left_input input{
+        margin: 5px 0px 0px 0px;
+        width: 117px;
+        height: 30px;
+    }
+    .left_bottom_buttom{
+        margin: 0px 0px 0px 0.3%;
+        position: fixed; 
+        bottom: 15px;
+    }
+    .left_big_buttom li {
+        height: 30px;
+    }
+    .left_big_buttom li input{
+        padding-left: 15px;
+        text-align: left;
+        width: 100%;
+        height: 100%;
+        color:rgb(195, 198,206);
+        font-size: 14px;
+        text-decoration:none;
+        background: rgb(30, 38, 44);
+        border: 0px;
+        font-family:Microsoft JhengHei;
+        font-weight: bold;
+        transition:all 0.5s;
+    }
+    .right{
+        text-align:center;
+        float:left;
+        background-color:rgb(50,255,255);
+        width: 82%;
+        margin-left: 18%
+    }
+    .right_top_photo{
+        overflow:hidden;
+        width: 82%;
+        height: 530px;
+        margin-right: 13%;
+    }
+    .right_top_photo img{
+        width: 240%;
+        margin-left: -90%;
+        z-index: 0;
+    }
+    .right_middle_buttom{
+        margin-top: 520px;
+    }
+    .right_middle_buttom li{
+        width: 120px;
+        margin-left: 0px;
+    }
+    
+    .right_middle_buttom li input{
+        margin-left: 15px;
+    }
+    .right_top_text_text {
+        margin-right: 15  px;
+    }
+    .right_top_text_text p{
+        visibility: hidden;
+        margin-top: 150px;
+        font-size: 14px;
+    }
+    .right_top_text_buttom div li{
+        width: 200px;
+    }
+    .right_top_text_buttom{
+        position: absolute;
+        z-index: 1;
+        margin-top:300px;
+    }
+    .right_top_ibon{
+        position: absolute;
+        z-index: 1;
+        margin-top:450px;
+    }
+    .right_buttom div img{
+        width: 560px;
+    }
+    .right_buttom_img_bottom img{
+        visibility: hidden;
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    html{
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    body{
+        width: 100%;
+        height: 1800px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .left{
+        visibility: hidden;
+        display:none;
+    }
+    .left img{
+        margin-left: 5px;
+        visibility: visible;
+        display:block;
+        z-index: 10;
+    }
+    .right{
+        width: 200%;
+        margin-left: 0%;
+        background-color: rgb(30, 38, 44);
+    }
+    .right_top_photo{
+        overflow:hidden;
+        width: 200%;
+        height: 460px;
+        margin-right: 13%;
+    }
+    .right_top_photo img{
+        width: 240%;
+        margin-left: -90%;
+        z-index: 0;
+    }
+    .right_middle_buttom{
+        margin-top: 460px;
+    }
+    .right_middle_buttom li{
+        width: 120px;
+        margin-left: 0px;
+    }
+    
+    .right_middle_buttom li input{
+        margin-left: 15px;
+    }
+    .right_top_text_text {
+        margin-right: 15  px;
+    }
+    .right_top_text_text p{
+        visibility: hidden;
+        margin-top: 150px;
+        font-size: 14px;
+    }
+    .right_top_text_buttom div li{
+        width: 200px;
+    }
+    .right_top_text_buttom{
+        position: absolute;
+        z-index: 1;
+        margin-top:300px;
+    }
+    .right_buttom{
+        background-color: rgb(30, 57, 80);
+    }
+    .right_top_ibon{
+        visibility: hidden;
+        display:none;
+        position: absolute;
+        z-index: 1;
+        margin-top:450px;
+    }
+    .right_buttom div img{
+        width: 575px;
+    }
+    .right_buttom_img_bottom img{
+        visibility: hidden;
+        display:none;
+    }
 }
